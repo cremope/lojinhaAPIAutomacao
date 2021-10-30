@@ -20,7 +20,7 @@ public class ProdutoTest {
     {
         //Configurando os dados da API Rest da lojinha
         baseURI= "http://165.227.93.41";
-        basePath = "/lojinha-bugada";
+        basePath = "/lojinha";
 
         //Obter o token do usuario admin
         this.token = given()
