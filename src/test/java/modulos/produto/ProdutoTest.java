@@ -2,21 +2,12 @@ package modulos.produto;
 
 import dataFactory.ProdutoDataFactory;
 import dataFactory.UsuarioDataFactory;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import netscape.javascript.JSUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.ComponentePojo;
-import pojo.ProdutoPojo;
-import pojo.UsuarioPojo;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 
@@ -29,7 +20,7 @@ public class ProdutoTest {
     {
         //Configurando os dados da API Rest da lojinha
         baseURI= "http://165.227.93.41";
-        basePath = "/lojinha-bugada";
+        basePath = "/lojinha";
 
         //Obter o token do usuario admin
         this.token = given()
